@@ -1,5 +1,11 @@
 <section>
 
-List
+  <ul>
+    <li ng-repeat="item in list | filter: {name:search}">
+      <p>Name: {{ item.name }}</p>
+      <p>Type: {{ item.type }}</p>
+      <p>Popularity: {{ item.popularity }}</p>
+    </li>
+  </ul>
 
 </section>

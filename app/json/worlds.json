@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 1,
+    "name" : "Midkemia",
+    "type" : "Fantasy",
+    "popularity" : 7
+  },
+  {
+    "id" : 2,
+    "name" : "Wheel of Time",
+    "type" : "Fantasy",
+    "popularity" : 8
+  },
+  {
+    "id" : 3,
+    "name" : "Revelation Space",
+    "type" : "Sci-fi",
+    "popularity" : 3
+  },
+  {
+    "id" : 4,
+    "name" : "Dune",
+    "type" : "Sci-fi",
+    "popularity" : 9
+  },
+  {
+    "id" : 5,
+    "name" : "Fionavar",
+    "type" : "Fantasy",
+    "popularity" : 5
+  }
+]

@@ -4,4 +4,6 @@
 'use strict';
 
 angular.module('worldsApp')
-  .service('TypesService', function($resource) {});
+  .service('TypesService', function($resource) {
+    return $resource('json/types.json', {}, {});
+  });
