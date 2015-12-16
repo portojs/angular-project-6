@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('worldApp')
+angular.module('worldsApp')
   .directive('mainForm', function() {
     return {
       restrict: 'E',

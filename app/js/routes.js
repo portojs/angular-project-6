@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('worldApp')
+angular.module('worldsApp')
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/worlds', {

@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('worldApp')
+angular.module('worldsApp')
   .directive('mainList', function() {
     return {
       restrict: 'E',

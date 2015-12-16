@@ -1,7 +1,7 @@
 
 'use strict';
 
-angular.module('worldApp')
+angular.module('worldsApp')
   .directive('mainFooter', function() {
     return {
       restrict: 'E',

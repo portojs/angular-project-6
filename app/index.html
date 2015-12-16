@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="worldApp">
+<html>
 <head lang="en">
 
   <meta charset="utf-8">
@@ -13,14 +13,20 @@
   <link rel="stylesheet" href="css/normalize.css" type="text/css">
   <link rel="stylesheet" href="css/app.css" type="text/css">
   <link rel="stylesheet" href="css/responsive.css" type="text/css">
+  <!-- fonts -->
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400,400italic|Cabin+Condensed:400,700,600,500' type='text/css'>
 
 </head>
-<body>
+<body ng-app="worldsApp">
 
-  <main-header></main-header>
+  <section id="section-one">
+    <main-header></main-header>
+  </section>
 
-  <div ng-view></div>
-  <main-footer></main-footer>
+  <section id="section-two">
+    <div ng-view id="main-wrapper"></div>
+    <main-footer></main-footer>
+  </section>
 
   <!-- vendor libraries -->
   <script src="js/vendor/angular.js"></script>

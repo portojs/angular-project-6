@@ -3,6 +3,6 @@
  */
 'use strict';
 
-angular.module('worldApp')
+angular.module('worldsApp')
   .controller('WorldsIndexController', function() {
   });
