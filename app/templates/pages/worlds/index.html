@@ -4,11 +4,7 @@
 
   <label for="search-world">Search world:</label>
   <input ng-model="search" type="search" id="search-world" placeholder="Type name of the world here..."/>
-  <div>
-    <span ng-repeat="type in types">
-      {{type}}
-    </span>
-  </div>
+  <button name="popularity-button" type="button">Sort by popularity</button>
 
   <main-list list="worlds" search="search"></main-list>
 
