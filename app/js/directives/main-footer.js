@@ -5,6 +5,6 @@ angular.module('worldApp')
   .directive('mainFooter', function() {
     return {
       restrict: 'E',
-      templateUrl: 'templates/directive/main-footer.html'
+      templateUrl: 'templates/directives/main-footer.html'
     };
   });

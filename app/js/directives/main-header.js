@@ -8,6 +8,6 @@ angular.module('worldApp')
   .directive('mainHeader', function() {
     return {
       restrict: 'E',
-      templateUrl: 'templates/directive/main-header.html'
+      templateUrl: 'templates/directives/main-header.html'
     };
   });

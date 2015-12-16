@@ -8,6 +8,6 @@ angular.module('worldApp')
   .directive('mainForm', function() {
     return {
       restrict: 'E',
-      templateUrl: 'templates/directive/main-form.html'
+      templateUrl: 'templates/directives/main-form.html'
     };
   });
