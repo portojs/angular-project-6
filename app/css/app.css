@@ -104,6 +104,10 @@ main-header ul li a:hover {
   background-color: #ff60f5;
 }
 
+main-header ul li a.selected {
+  color: #fff;
+  background-color: #ff60f5;
+}
 
 
 /**********************************************************

@@ -11,7 +11,8 @@ angular.module('worldsApp')
       templateUrl: 'templates/directives/main-list.html',
       scope: {
         list: '=',
-        search: '='
+        search: '=',
+        sort: '='
       }
     };
   });

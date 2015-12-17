@@ -7,4 +7,5 @@ angular.module('worldsApp')
   .controller('WorldsIndexController', function($scope, TypesService, WorldsService) {
     $scope.types = TypesService.query();
     $scope.worlds = WorldsService.query();
+    $scope.sort = false;
   });
