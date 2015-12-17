@@ -5,7 +5,7 @@
 'use strict';
 
 angular.module('worldsApp')
-  .directive('mainList', function() {
+  .directive('mainList', function(typeDataService) {
     return {
       restrict: 'E',
       templateUrl: 'templates/directives/main-list.html',
@@ -13,6 +13,9 @@ angular.module('worldsApp')
         list: '=',
         search: '=',
         sort: '='
+      },
+      link: function(scope, element, attrs) {
+        scope.type = typeDataService.currentType;
       }
     };
   });
