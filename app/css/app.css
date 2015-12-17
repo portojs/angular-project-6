@@ -16,6 +16,7 @@ h3 {
 
 ul {
   list-style: none;
+  padding-left: 0;
 }
 
 a {
@@ -169,6 +170,37 @@ PAGE: WORLDS
   margin: 1em 0;
 }
 
+
+
 /**********************************************************
 PAGE: CONTACT
 ***********************************************************/
+
+#page-contact #primary img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+#page-contact #secondary a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 1.5em;
+  margin: 0 0 0.5em;
+}
+
+#page-contact #secondary li.phone a {
+  background-image: url('../img/phone.png');
+}
+
+#page-contact #secondary li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+#page-contact #secondary li.twitter a {
+  background-image: url('../img/twitter.png');
+}

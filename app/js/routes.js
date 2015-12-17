@@ -14,7 +14,8 @@ angular.module('worldsApp')
         templateUrl: 'templates/pages/contact/index.html'
       })
       .when('/', {
-        templateUrl: 'templates/pages/worlds/index.html'
+        templateUrl: 'templates/pages/worlds/index.html',
+        controller: 'WorldsIndexController'
       })
       .otherwise({redirectTo: '/'});
   }]);
