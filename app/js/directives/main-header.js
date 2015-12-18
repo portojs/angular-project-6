@@ -14,6 +14,7 @@ angular.module('worldsApp')
         scope.selectLink = function(link) {
           scope.currentLink = link;
           scope.checkLink(link);
+          scope.showHide(link);
         };
         scope.selectedLink = function(link) {
           return scope.currentLink === link;
@@ -25,6 +26,15 @@ angular.module('worldsApp')
             typeDataService.changeType("Fantasy");
           } else if (link === 3) {
             typeDataService.changeType("Sci-fi");
+          }
+        };
+        scope.showHide = function(link) {
+          if (link === 1 || link === 2 || link === 3) {
+            typeDataService.showList();
+            typeDataService.hideForm();
+          } else if (link === 4) {
+            typeDataService.hideList();
+            typeDataService.showForm();
           }
         };
       }

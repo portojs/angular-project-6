@@ -7,15 +7,33 @@ angular.module('worldsApp')
   .service('typeDataService', function() {
 
     var currentType = '';
+    var showList = true;
+    var showForm = false;
 
     return {
       changeType: function(type) {
-        console.log('changing to ' + type);
         currentType = type;
-        console.log('new type is ' + currentType);
       },
       getType: function() {
         return currentType;
+      },
+      showList: function() {
+        showList = true;
+      },
+      hideList: function() {
+        showList = false;
+      },
+      showForm: function() {
+        showForm = true;
+      },
+      hideForm: function() {
+        showForm = false;
+      },
+      checkList: function() {
+        return showList;
+      },
+      checkForm: function() {
+        return showForm;
       }
     };
   });

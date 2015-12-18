@@ -2,10 +2,14 @@
 
   <h3>Worlds</h3>
 
-  <label for="search-world">Search world:</label>
-  <input ng-model="search" type="search" id="search-world" placeholder="Type name of the world here..."/>
-  <button ng-click="sort = !sort" name="popularity-button" type="button">Sort by popularity</button>
+  <section ng-show="checkList()">
+    <label for="search-world">Search world:</label>
+    <input ng-model="search" type="search" id="search-world" placeholder="Type name of the world here..."/>
+    <button ng-click="sort = !sort" name="popularity-button" type="button">Sort by popularity</button>
 
-  <main-list list="worlds" search="search" sort="sort"></main-list>
+    <main-list list="worlds" search="search" sort="sort"></main-list>
+  </section>
+
+  <main-form ng-show="checkForm()"></main-form>
 
 </section>
