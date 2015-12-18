@@ -5,10 +5,17 @@
 
 angular.module('worldsApp')
   .service('typeDataService', function() {
+
+    var currentType = "";
+
     return {
-      currentType: "",
       changeType: function(type) {
-        return type;
+        console.log('changing to ' + type);
+        currentType = type;
+        console.log('new type is ' + currentType);
+      },
+      getType: function() {
+        return currentType;
       }
-    }
+    };
   });

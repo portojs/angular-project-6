@@ -15,8 +15,9 @@ angular.module('worldsApp')
         sort: '='
       },
       link: function(scope, element, attrs) {
-        scope.type = "";
-        scope.getType = typeDataService.getType();
+        scope.newType = function() {
+          return typeDataService.getType();
+        };
       }
     };
   });

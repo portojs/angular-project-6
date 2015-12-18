@@ -9,15 +9,13 @@ angular.module('worldsApp')
     return {
       restrict: 'E',
       templateUrl: 'templates/directives/main-header.html',
-      scope: {
-        type: '='
-      },
       link: function(scope, element, attrs) {
         scope.currentLink = $location.path() === '/contact' ? 5 : 1;
         scope.selectLink = function(link) {
           scope.currentLink = link;
         };
-        scope.changeType = function(type) {
+        scope.change = function(type) {
+          console.log(type);
           typeDataService.changeType(type);
         };
         scope.selectedLink = function(link) {
