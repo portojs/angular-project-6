@@ -1,7 +1,7 @@
 <section>
 
   <ul>
-    <li ng-repeat="item in list | filter: {name:search} | filter: {type:type} |orderBy: (sort ? '-popularity' : 'name')">
+    <li ng-repeat="item in list | filter: {name:search} | filter: {type:getType()} |orderBy: (sort ? '-popularity' : 'name')">
       <p>Name: {{ item.name }}</p>
       <p>Type: {{ item.type }}</p>
       <p>Popularity: {{ item.popularity }}</p>

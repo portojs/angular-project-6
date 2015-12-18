@@ -6,6 +6,9 @@
 angular.module('worldsApp')
   .service('typeDataService', function() {
     return {
-      currentType: ""
+      currentType: "",
+      changeType: function(type) {
+        return type;
+      }
     }
   });
