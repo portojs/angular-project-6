@@ -13,13 +13,19 @@ angular.module('worldsApp')
         scope.currentLink = $location.path() === '/contact' ? 5 : 1;
         scope.selectLink = function(link) {
           scope.currentLink = link;
-        };
-        scope.change = function(type) {
-          console.log(type);
-          typeDataService.changeType(type);
+          scope.checkLink(link);
         };
         scope.selectedLink = function(link) {
           return scope.currentLink === link;
+        };
+        scope.checkLink = function(link) {
+          if (link === 1) {
+            typeDataService.changeType("");
+          } else if (link === 2) {
+            typeDataService.changeType("Fantasy");
+          } else if (link === 3) {
+            typeDataService.changeType("Sci-fi");
+          }
         };
       }
     };
