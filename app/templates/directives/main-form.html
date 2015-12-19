@@ -4,17 +4,17 @@
 
     <div>
       <label for="form-field-name">Name: </label>
-      <input ng-model="world.name" ng-change="checkForm()" id="form-field-name" type="text" required />
+      <input ng-model="world.name" ng-change="checkForm()" ng-blur="buttonAnimation()" id="form-field-name" type="text" required />
     </div>
     <div>
       <label for="form-field-type">Type: </label>
-      <select ng-model="world.type" ng-change="checkForm()" id="form-field-type" required>
+      <select ng-model="world.type" ng-change="checkForm()" ng-blur="buttonAnimation()" id="form-field-type" required>
         <option ng-repeat="type in types">{{ type }}</option>
       </select>
     </div>
     <div>
       <label for="form-field-popularity">Popularity:</label>
-      <select ng-model="world.popularity" ng-change="checkForm()" id="form-field-popularity" required>
+      <select ng-model="world.popularity" ng-change="checkForm()" ng-blur="buttonAnimation()" id="form-field-popularity" required>
         <option ng-repeat="i in [0,1,2,3,4,5,6,7,8,9]">{{ i }}</option>
       </select>
     </div>

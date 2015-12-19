@@ -192,6 +192,11 @@ form input,
 form select,
 form button {
   margin: 0.5em 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 form input,
@@ -204,6 +209,9 @@ form input {
   border: 1px solid;
 }
 
+form button.animated {
+  background-color: lightgreen;
+}
 
 
 /**********************************************************

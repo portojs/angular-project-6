@@ -28,6 +28,9 @@ angular.module('worldsApp')
             scope.buttonText = "Form not yet completed";
           }
         };
+        scope.buttonAnimation = function() {
+          $('button').toggleClass('animated');
+        }
       }
     };
   });
