@@ -1,0 +1,56 @@
+/**********************************************************
+PAGE: WORLDS
+***********************************************************/
+
+@media screen and (min-width: 570px) {
+
+  #main-wrapper input[type='search'] {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+
+  #main-wrapper input[type='search'] {
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  #main-wrapper input[type='search'] {
+    width: 90%;
+  }
+}
+
+
+
+/**********************************************************
+PAGE: CONTACT
+***********************************************************/
+
+@media screen and (min-width: 800px) {
+
+  #page-contact #primary {
+    display: inline-block;
+    width: 30%;
+    float: left;
+  }
+
+  #page-contact #secondary {
+    display: inline-block;
+    width: 65%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  #page-contact #primary {
+    width: 20%;
+  }
+
+  #page-contact #secondary {
+    width: 75%;
+  }
+}

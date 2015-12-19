@@ -150,7 +150,7 @@ PAGE: WORLDS
 ***********************************************************/
 
 #main-wrapper label[for="search-world"] {
-  width: 25%;
+  /*width: 25%;*/
   float: left;
   font-family: 'Cabin Condensed', sans-serif;
 }
