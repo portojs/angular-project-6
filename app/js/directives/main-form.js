@@ -15,10 +15,19 @@ angular.module('worldsApp')
       },
       link: function(scope, element, attrs) {
         scope.world = {};
+        scope.buttonText = "Form not yet completed";
         scope.submitForm = function() {
           scope.worlds.push(scope.world);
           scope.world = {};
-        }
+        };
+        scope.checkForm = function() {
+          if (scope.addWorldForm.$valid) {
+            scope.buttonText = "Add a new world";
+          }
+          else {
+            scope.buttonText = "Form not yet completed";
+          }
+        };
       }
     };
   });

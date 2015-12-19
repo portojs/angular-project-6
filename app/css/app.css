@@ -150,7 +150,6 @@ PAGE: WORLDS
 ***********************************************************/
 
 #main-wrapper label[for="search-world"] {
-  /*width: 25%;*/
   float: left;
   font-family: 'Cabin Condensed', sans-serif;
 }
@@ -162,7 +161,7 @@ PAGE: WORLDS
 
 #main-wrapper button[name="popularity-button"] {
   width: 100%;
-  margin-top: 0.5em;
+  margin: 0.5em 0 1em;
 }
 
 #main-wrapper main-list ul {
@@ -199,6 +198,10 @@ form input,
 form select,
 form button {
   width: 100%;
+}
+
+form input {
+  border: 1px solid;
 }
 
 
